@@ -1,1 +1,1 @@
-Extension to hide text characters on websites.
+Chrome extension to hide text characters on websites.
