@@ -13,10 +13,9 @@ function getNodes() {
             acceptNode: node => {
                 const rejectedElements = ["style", "script"];
 
-                if (
-                    rejectedElements.some(item => item.toUpperCase === node.parentElement.tagName) ||
-                    node.nodeValue.trim() === ""
-                ) return NodeFilter.FILTER_SKIP;
+                if (rejectedElements.some(item => item.toUpperCase === node.parentElement.tagName)) {
+                    return NodeFilter.FILTER_SKIP;
+                }
 
                 return NodeFilter.FILTER_ACCEPT;
             }
