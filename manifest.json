@@ -1,0 +1,13 @@
+{
+	"manifest_version": 3,
+	"name": "Hide Text On Hover",
+	"version": "0",
+	"description": "hide text.",
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["js/content.js"],
+			"css": ["css/content.css"]
+		}
+	]
+}
